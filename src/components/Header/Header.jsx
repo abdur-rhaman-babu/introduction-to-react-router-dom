@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import '../../App.css'
 const Header = () => {
   return (
     <div className="navbar bg-base-100 shadow-lg">
@@ -29,6 +29,7 @@ const Header = () => {
             <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
             <Link to="/service">Service</Link>
+            <Link to="/users">Users</Link>
           </div>
         </div>
         <a className="btn btn-ghost text-xl">daisyUI</a>
@@ -39,6 +40,7 @@ const Header = () => {
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/service">Service</Link>
+          <Link to="/users">Users</Link>
         </div>
       </div>
       <div className="navbar-end">
