@@ -1,22 +1,21 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const User = ({ user }) => {
-  console.log(user);
-  const { brand, image, model, price  } = user;
+//   console.log(user);
+  const { name,email,id } = user;
   return (
     <div className="card bg-base-100 shadow-xl border border-blue-400">
       <figure>
-        <img
-          src={image}
-          alt="Shoes"
-        />
       </figure>
       <div className="p-5">
-        <h2 className="card-title">{brand}</h2>
-        <p>{model}</p>
-        <p>Price:${price}</p>
+        <h2 className="card-title">{name}</h2>
+        <p>{email}</p>
+       
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Buy Now</button>
+          <Link to = {`/user/${id}`}>
+            <button className="btn btn-primary">Show Details</button>
+          </Link>
         </div>
       </div>
     </div>
