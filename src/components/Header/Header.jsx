@@ -30,6 +30,7 @@ const Header = () => {
             <Link to="/contact">Contact</Link>
             <Link to="/service">Service</Link>
             <Link to="/users">Users</Link>
+            <Link to="/posts">Posts</Link>
           </div>
         </div>
         <a className="btn btn-ghost text-xl">daisyUI</a>
@@ -41,6 +42,7 @@ const Header = () => {
           <Link to="/contact">Contact</Link>
           <Link to="/service">Service</Link>
           <Link to="/users">Users</Link>
+          <Link to="/posts">Posts</Link>
         </div>
       </div>
       <div className="navbar-end">
